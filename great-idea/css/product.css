@@ -88,103 +88,43 @@ body {
 }
 
 .navbar .nav-logo {
-	margin-left: 12%;
+    margin-left: 12%;
 }
 
-.navbar a {
-	color: #888;
-	text-decoration: none;
-	font-weight: 400;
-	padding: 10px;
+@media only screen and (max-width: 768px) {
+    .navbar .nav-logo {
+		display: block;
+	}
 }
 
-/* Index Head splash page styling */
 
-.heading {
-	display: flex;
-	margin: 80px 0;
-	justify-content: space-around;
+@media only screen and (max-width: 768px) {
+    .navbar a {
+        color: #888;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 10px;
+        width: 100%;
+    }
 }
 
-header .heading-content {
-	display: inline-block;
-	font-size: 75px;
-	text-align: center;
-	vertical-align: middle;
-	margin-top: 50px;
-	margin-right: 60px;
-}
-
-header .heading-content button {
-	display: block;
-	box-sizing: border-box;
-	width: 180px;
-	height: 30px;
-	font-size: 20px;
-	border: 1px solid black;
-	padding: 0px 5px;
-	margin: 0 auto;
-	margin-top: 30px;
-	background-color: white;
-}
-
-/* Index Main Content Styling */
-
-.main-content-top {
-	display: flex;
-	padding: 40px 0;
-	border-top: 1px solid black;
-}
-
-.main-content-top .content-box:first-of-type {
-	margin-right: 2.5%;
-}
-
-.main-img {
-	text-align: center;
-	padding: 40px 0;
-}
-
-.main-content-bot {
-	display: flex;
-	padding-bottom: 40px;
-	border-bottom: 1px solid black;
-}
-
-.main-content-bot .content-box:first-of-type {
-	margin-right: 2.5%;
-}
-
-.main-content-bot .content-box:last-of-type {
-	margin-left: 2.5%;
-}
-
-/* Index Contact Section Styling */
-
-.contact {
-	padding-top: 40px;
-}
-
-/* Footer */
-
-footer {
-	text-align: center;
-	padding-bottom: 40px;
-}
-
-/* Services Header */
-
-header .services-header-img {
+header .products-header-img {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
-header .services-header-content {
+@media only screen and (max-width: 768px) {
+    header .products-header-img {
+		display: none;
+	}
+}
+
+header .products-header-content {
 	padding-bottom: 40px;
 }
 
-header .services-header-content h1 {
+header .products-header-content h1 {
 	font-size: 25px;
 }
 
@@ -219,21 +159,26 @@ header .services-header-content h1 {
 	border-radius: 5%;
 }
 
+@media only screen and (max-width: 768px) {
+	
+	.main-block-content .content-block {
+		min-width: 100%;
+	}
+}
+
 /* Services Main Additional Facts Styling */
 
-.main-more-facts {
+.products-more-facts {
 	display: flex;
 	margin: 40px 0;
 }
 
-.main-more-facts-content {
+.products-facts-content {
 	margin-right: 5%;
 }
 
-.main-more-facts ul {
+.products-more-facts ul {
 	list-style-type: circle;
 	list-style-position: inside;
 	line-height: 2em;
 }
-
-
