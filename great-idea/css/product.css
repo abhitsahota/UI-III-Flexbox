@@ -87,12 +87,16 @@ body {
 	flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 768px) {
-    .navbar .nav-logo {
-        display: none;
+.navbar .nav-logo {
+    margin-left: 12%;
 }
 
+@media only screen and (max-width: 768px) {
+    .navbar .nav-logo {
+		display: block;
+	}
 }
+
 
 @media only screen and (max-width: 768px) {
     .navbar a {
@@ -102,4 +106,79 @@ body {
         padding: 10px;
         width: 100%;
     }
+}
+
+header .products-header-img {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    header .products-header-img {
+		display: none;
+	}
+}
+
+header .products-header-content {
+	padding-bottom: 40px;
+}
+
+header .products-header-content h1 {
+	font-size: 25px;
+}
+
+/* Services Main Block Content */
+
+.main-block-content {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 20px 0;
+	border-top: 1px solid black;
+}
+
+.main-block-content .content-block {
+	width: 48%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	background-color: lightgray;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.main-block-content .content-block button {
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid black;
+	padding: 10px 10%;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+	
+	.main-block-content .content-block {
+		min-width: 100%;
+	}
+}
+
+/* Services Main Additional Facts Styling */
+
+.products-more-facts {
+	display: flex;
+	margin: 40px 0;
+}
+
+.products-facts-content {
+	margin-right: 5%;
+}
+
+.products-more-facts ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	line-height: 2em;
 }
